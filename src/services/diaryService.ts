@@ -1,8 +1,9 @@
-import diaryData from '../../data/diaries.json';
+import diaries from '../../data/diaries';
+import { DiaryEntry } from '../types';
 
-const getEntries = () => {
+const getEntries = (): DiaryEntry[] => {
 	// eslint-disable-next-line @typescript-eslint/no-unsafe-return
-	return diaryData;
+	return diaries;
 };
 
 const addEntry = () => {
