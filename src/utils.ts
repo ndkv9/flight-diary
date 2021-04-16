@@ -58,6 +58,7 @@ const parseWeather = (weather: unknown): Weather => {
 	return weather;
 };
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const isVisibility = (para: any): para is Visibility => {
 	return Object.values(Visibility).includes(para);
 };
